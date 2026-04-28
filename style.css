@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.image-row {
+	display: flex;
+	gap: 20px;
+	margin: 40px 0;
+}
+
+.excerpt-img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+.left40 {
+	flex: 0 0 40%;
+}
+.right60 {
+	flex: 0 0 60%;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+
+section > img[src="essay-paper.png"] {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
