@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+	background: -webkit-linear-gradient(180deg, #187795,#fbf5f3,#b4869f,#6b2737,#01161e); 
+	background: no-repeat linear-gradient(180deg, #187795,#fbf5f3,#b4869f,#6b2737,#01161e) ;    
+	height: fit-content;                           
 }
 
 .image-row {
@@ -32,4 +35,7 @@ section > img[src="essay-paper.png"] {
 	width: 90%;
 	display: block;
 	margin: 0 auto;
+}
+#bioshield {
+	content-visibility: hidden;
 }
