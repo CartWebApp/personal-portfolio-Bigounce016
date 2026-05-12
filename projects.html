@@ -3,19 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Adventure</title>
+    <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<img src="image1.png" alt="image of cool awesome website with laser beams">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit qui rem quae consequuntur quam? Nihil repellat illo quo consectetur eum maiores alias, hic ad qui tenetur distinctio sunt voluptatibus!</p>
-<img src="image2.png" alt="image of cool awesome website with laser beams">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit qui rem quae consequuntur quam? Nihil repellat illo quo consectetur eum maiores alias, hic ad qui tenetur distinctio sunt voluptatibus!</p>
-<img src="image3.png" alt="image of cool awesome website with laser beams">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit qui rem quae consequuntur quam? Nihil repellat illo quo consectetur eum maiores alias, hic ad qui tenetur distinctio sunt voluptatibus!</p>
-<img src="image4.png" alt="image of cool awesome website with laser beams">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit qui rem quae consequuntur quam? Nihil repellat illo quo consectetur eum maiores alias, hic ad qui tenetur distinctio sunt voluptatibus!</p>
-<img src="image5.png" alt="image of cool awesome website with laser beams">
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit qui rem quae consequuntur quam? Nihil repellat illo quo consectetur eum maiores alias, hic ad qui tenetur distinctio sunt voluptatibus!</p>
+<body class="projects-page">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="englishwork.html">English Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="5yearplan.html">5-year plan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="projects-container">
+        <div class="projects-layout">
+            <!-- Featured Carousel -->
+            <section class="featured-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="carousel-slide active" data-link="">
+                            <img src="stupidimages/image1.png" alt="Project 1">
+                        </div>
+                        <div class="carousel-slide" data-link="">
+                            <img src="stupidimages/image2.png" alt="Project 2">
+                        </div>
+                        <div class="carousel-slide" data-link="">
+                            <img src="stupidimages/image3.png" alt="Project 3">
+                        </div>
+                        <div class="carousel-slide" data-link="">
+                            <img src="stupidimages/image4.png" alt="Project 4">
+                        </div>
+                        <div class="carousel-slide" data-link="">
+                            <img src="stupidimages/image5.png" alt="Project 5">
+                        </div>
+
+                        <div class="carousel-controls">
+                            <button class="carousel-btn prev">❮</button>
+                            <button class="carousel-btn next">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Grid -->
+            <section class="projects-grid">
+                <div class="project-card">
+                    <img src="stupidimages/image1.png" alt="Project 1">
+                </div>
+                <div class="project-card">
+                    <img src="stupidimages/image2.png" alt="Project 2">
+                </div>
+                <div class="project-card">
+                    <img src="stupidimages/image3.png" alt="Project 3">
+                </div>
+                <div class="project-card">
+                    <img src="stupidimages/image4.png" alt="Project 4">
+                </div>
+                <div class="project-card">
+                    <img src="stupidimages/image5.png" alt="Project 5">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="projects.js"></script>
 </body>
 </html>

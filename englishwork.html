@@ -4,59 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Work</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="englishwork.html">English Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="5yearplan.html">5-year plan</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-  
     </nav>
 
     <h1>English Work</h1>
 
-    <a href="#" onclick="showProject('Research Paper')">Research Paper</a>
-    <a href="#" onclick="showProject('Essay')">Essay</a>
+    <section id="english-projects">
+        <a href="#" onclick="showProject('Research Paper')">Research Paper</a>
+        <a href="#" onclick="showProject('Essay')">Essay</a>
+    </section>
 
-<main>
-  <!-- MLA PAPER IMAGE -->
-  <section>
-    <img src="essay-paper.png" alt="Virtual/Augmented Reality Tested on Primates - MLA Essay"/>
-  </section>
-  <br/><br/>
-  <!-- LARGE PULL TEXT -->
-  <section>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id leo vel odio
-        pellentesque vehicula. In enim tortor, tincidunt non risus id, porttitor consequat
-        dui. Cras dapibus risus non neque venenatis cursus. Pellentesque porttitor
-        dapibus augue sit amet pharetra. In venenatis ultrices metus sed iaculis. Aenean
-        accumsan molestie facilisis. Aliquam id orci diam. Praesent a efficitur mauris. In
-        aliquet nisl at laoreet tincidunt.
-    </p>
-  </section>
-  <br/>
-  <!-- TWO EXCERPT IMAGES SIDE BY SIDE -->
-  <section>
-     <section class="image-row">
-       <img src="excerpt-left.png" alt="Essay excerpt left" class="excerpt-img"/>
-       <img src="excerpt-right.png" alt="Essay excerpt right" class="excerpt-img"/>
-     </section>
-  </section>
-  <br/><br/><br/>
-  <!-- TWO EXCERPT IMAGES SIDE BY SIDE (second row) -->
-  <section>
-     <section class="image-row">
-       <img src="excerpt-left-2.png" alt="Essay excerpt left 2" class="excerpt-img left40"/>
-       <img src="excerpt-right-2.png" alt="Essay excerpt right 2" class="excerpt-img right60"/>
-     </section>
-  </section>
-  <br/><br/><br/><br/>
-</main>
+    <section id="researchpaper" class="project-section hidden">
+        <h2>Research Paper</h2>
+        <p>Research paper content goes here. Add images/text as needed.</p>
+    </section>
+
+    <section id="essay" class="project-section hidden">
+      <div class="essay-layout">
+        <div class="paper-hero">
+          <img src="essay-paper.png" alt="Virtual/Augmented Reality Tested on Primates - MLA Essay" />
+        </div>
+
+        <div class="intro-copy">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id leo vel odio
+            pellentesque vehicula. In enim tortor, tincidunt non risus id, porttitor consequat dui.
+            Cras dapibus risus non neque venenatis cursus. Pellentesque porttitor dapibus augue sit
+            amet pharetra. In venenatis ultrices metus sed iaculis. Aenean accumsan molestie
+            facilisis. Aliquam id orci diam. Praesent a efficitur mauris. In aliquet nisl at laoreet
+            tincidunt.
+          </p>
+        </div>
+
+        <div class="excerpt-grid">
+          <div class="excerpt-card paper-card">
+            <img src="excerpt-left.png" alt="Essay excerpt left" class="excerpt-img" />
+          </div>
+
+          <div class="excerpt-card text-card">
+            <p>
+              Pellentesque porttitor dapibus augue sit amet pharetra. In venenatis ultrices metus sed
+              iaculis. Aenean accumsan molestie facilisis. Aliquam id orci diam. Praesent a efficitur
+              mauris. In aliquet nisl at laoreet tincidunt.
+            </p>
+          </div>
+
+          <div class="excerpt-card text-card">
+            <p>
+              Pellentesque porttitor dapibus augue sit amet pharetra. In venenatis ultrices metus sed
+              iaculis. Aenean accumsan molestie facilisis. Aliquam id orci diam. Praesent a efficitur
+              mauris. In aliquet nisl at laoreet tincidunt.
+            </p>
+          </div>
+
+          <div class="excerpt-card paper-card">
+            <img src="excerpt-right-2.png" alt="Essay excerpt right 2" class="excerpt-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
 <hr/>
 </body>
 </html>

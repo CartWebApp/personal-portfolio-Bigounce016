@@ -4,82 +4,107 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Elic Reynolds — Year in Review & 5-Year Plan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="#">My Projects</a> &nbsp;|&nbsp;
-    <a href="#">Contact me</a> &nbsp;|&nbsp;
-    <a href="#">Resume</a> &nbsp;|&nbsp;
-    <a href="#plan">5-year plan</a> &nbsp;|&nbsp;
-    <a href="#yir">Year-in-Review</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="englishwork.html">English Work</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="5yearplan.html">5-year plan</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
 <hr/>
 
+<div class="tabs">
+  <button id="review-btn" class="tab-btn active">Year in Review</button>
+  <button id="plan-btn" class="tab-btn">5-Year Plan</button>
+</div>
+
 <main>
 
   <!-- YEAR IN REVIEW -->
-  <section id="yearinreview">
+  <section id="yearinreview" class="content active">
     <h1>Year in Review</h1>
 
-    <p>
-      If I had to describe this year, I would say it was an epic journey that led me to explore
-      new and wonderful things and new opportunities. Working with everyone I worked with and
-      learning how to write better, think critically, and work with others taught me so much —
-      and I have been so happy to do all I have done. With my instructors and my peers,
-      everything has been wonderful.
-    </p>
+    <div class="timeline">
 
-    <p>
-      Where I started was nowhere. I had a little knowledge of coding which I came to learn
-      didn't really help me, as I didn't remember much of it. I learned from the beginning that
-      it wasn't gonna be easy and that I was gonna face very difficult challenges throughout the
-      school year. I was able to move along though with the help from others and I learned many
-      new things — from looking at a blank file to filling it with anything I could want. I had so
-      many good ideas and had ways to actually implement them.
-    </p>
+    <div class="timeline-item fade-in">
+      <h2>The Epic Journey</h2>
+      <p>
+        If I had to describe this year, I would say it was an epic journey that led me to explore
+        new and wonderful things and new opportunities. Working with everyone I worked with and
+        learning how to write better, think critically, and work with others taught me so much —
+        and I have been so happy to do all I have done. With my instructors and my peers,
+        everything has been wonderful.
+      </p>
+    </div>
 
-    <p>
-      When it came to working with others, I learned that collaboration was a part of the class
-      and actually helped me make many friends. It taught me how to communicate my ideas
-      clearly and not to shoot down anyone's ideas for seeming dumb, but instead lead them to
-      an even better idea to benefit everyone.
-    </p>
+    <div class="timeline-item fade-in">
+      <h2>From Zero to Hero</h2>
+      <p>
+        Where I started was nowhere. I had a little knowledge of coding which I came to learn
+        didn't really help me, as I didn't remember much of it. I learned from the beginning that
+        it wasn't gonna be easy and that I was gonna face very difficult challenges throughout the
+        school year. I was able to move along though with the help from others and I learned many
+        new things — from looking at a blank file to filling it with anything I could want. I had so
+        many good ideas and had ways to actually implement them.
+      </p>
+    </div>
 
-    <p>
-      When we started to code, I was lost and tried my best to keep up — and I asked every
-      question I possibly could have. Which was honestly a great idea, and it led to great
-      moments where I said I was dumb because I was overthinking a not so complicated problem
-      that truly had an easy fix. Mr. Fast gave me moments where I would just go "Oh I get it
-      now" — mostly when I was learning how to use JavaScript and how to create cool functional
-      sites.
-    </p>
+    <div class="timeline-item fade-in">
+      <h2>Building Friendships</h2>
+      <p>
+        When it came to working with others, I learned that collaboration was a part of the class
+        and actually helped me make many friends. It taught me how to communicate my ideas
+        clearly and not to shoot down anyone's ideas for seeming dumb, but instead lead them to
+        an even better idea to benefit everyone.
+      </p>
+    </div>
 
-    <p>
-      Now with everything I know, I know I can effectively create a functioning site with
-      professional skills in web development. I can now create awesome animations for sites
-      using CSS, and it helps me make cool little details that look nice. I also learned how to
-      use APIs and various different JavaScript things that added major functionality to my sites.
-      I am grateful to have done what I have done so far.
-    </p>
+    <div class="timeline-item fade-in">
+      <h2>Coding Breakthroughs</h2>
+      <p>
+        When we started to code, I was lost and tried my best to keep up — and I asked every
+        question I possibly could have. Which was honestly a great idea, and it led to great
+        moments where I said I was dumb because I was overthinking a not so complicated problem
+        that truly had an easy fix. Mr. Fast gave me moments where I would just go "Oh I get it
+        now" — mostly when I was learning how to use JavaScript and how to create cool functional
+        sites.
+      </p>
+    </div>
+
+    <div class="timeline-item fade-in">
+      <h2>Mastering Web Development</h2>
+      <p>
+        Now with everything I know, I know I can effectively create a functioning site with
+        professional skills in web development. I can now create awesome animations for sites
+        using CSS, and it helps me make cool little details that look nice. I also learned how to
+        use APIs and various different JavaScript things that added major functionality to my sites.
+        I am grateful to have done what I have done so far.
+      </p>
+    </div>
+
+    </div>
   </section>
 
   <hr/>
 
   <!-- 5-YEAR PLAN -->
-  <section id="fiveyearplan">
+  <section id="fiveyearplan" class="content hidden">
     <h1>Five Year Plan</h1>
 
-    <p>
-      My plan for the next few years of my life is still just a bunch of learning. I want to
-      advance my skills further and go into computer science, which will teach me more than
-      just web development.
-    </p>
+    <div class="timeline">
 
-    <article>
+    <div class="timeline-item fade-in">
       <h2>Year One</h2>
       <p>
         My first year out of high school is community college — learning my basic GED classes
@@ -88,9 +113,9 @@
         work with school. I also want to get my driver's license so that I don't have to be taken
         everywhere.
       </p>
-    </article>
+    </div>
 
-    <article>
+    <div class="timeline-item fade-in">
       <h2>Year Two</h2>
       <p>
         My second year of college will be like the first — working and going to school every day —
@@ -99,9 +124,9 @@
         my own, be self-sufficient, and not depend on others. I will find out where I am going to
         live and where I could possibly work, and figure out how it is all going to work with school.
       </p>
-    </article>
+    </div>
 
-    <article>
+    <div class="timeline-item fade-in">
       <h2>Year Three</h2>
       <p>
         Year three is the first hard year where I am all by myself and off on new adventures and
@@ -110,9 +135,9 @@
         work done. I have to make sure not to slack off in class or I will fall behind. I have to
         make sure that I don't recklessly spend all my money and I should learn to budget.
       </p>
-    </article>
+    </div>
 
-    <article>
+    <div class="timeline-item fade-in">
       <h2>Year Four</h2>
       <p>
         My fourth year of college is just like the last but I know what I'm doing now and have
@@ -122,9 +147,9 @@
         also let me know it is okay to relax sometimes. I also will keep up with my budgeting and
         will make sure that I don't run out of money.
       </p>
-    </article>
+    </div>
 
-    <article>
+    <div class="timeline-item fade-in">
       <h2>Year Five</h2>
       <p>
         Year 5 is me still working towards my goal of getting my master's in computer science.
@@ -134,9 +159,11 @@
         that too. I'll keep up in school and I will never slack off and get lost. I will always
         remember to be me.
       </p>
-    </article>
+    </div>
+    </div>
   </section>
 </main>
 <hr/>
+<script src="script.js"></script>
 </body>
 </html>
