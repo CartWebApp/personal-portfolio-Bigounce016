@@ -379,39 +379,42 @@ section > img[src="essay-paper.png"] {
 
 .about-hero {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: clamp(24px, 4vw, 60px);
   margin-bottom: 100px;
-  min-height: 400px;
+  min-height: clamp(360px, 45vh, 420px);
 }
 
 .about-content {
-  flex: 1;
+  flex: 1 1 360px;
+  min-width: 280px;
 }
 
 .bio-box {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  padding: 40px 35px;
+  padding: clamp(28px, 3vw, 40px);
   border-radius: 18px;
   max-width: 420px;
+  width: min(100%, 420px);
 }
 
 .bio-box h2 {
   color: #111;
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 3vw, 2rem);
   margin: 0 0 20px;
   line-height: 1.2;
   font-weight: 500;
 }
 
 .bio-box h2:first-child {
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
 }
 
 .about-image {
-  flex: 1;
+  flex: 1 1 320px;
   display: flex;
   justify-content: center;
 }
@@ -428,47 +431,21 @@ section > img[src="essay-paper.png"] {
 .about-cta {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin-top: 80px;
+  gap: clamp(24px, 4vw, 80px);
+  margin-top: clamp(40px, 5vw, 80px);
   flex-wrap: wrap;
 }
 
 .cta-link {
   color: #fff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 300;
   transition: opacity 0.3s ease;
 }
 
 .cta-link:hover {
   opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-  .about-hero {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    min-height: auto;
-  }
-
-  .about-content {
-    flex: none;
-  }
-
-  .bio-box {
-    max-width: 100%;
-  }
-
-  .about-cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-title {
-    font-size: 3rem;
-  }
 }
 
 /* Resume Page Styles */
@@ -487,14 +464,16 @@ section > img[src="essay-paper.png"] {
 
 .resume-header {
   display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 2vw, 40px);
   align-items: flex-start;
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-  padding: 40px;
+  padding: clamp(24px, 3vw, 40px);
   color: #fff;
 }
 
 .header-left {
-  margin-right: 40px;
+  margin-right: clamp(20px, 3vw, 40px);
 }
 
 .profile-image {
@@ -507,14 +486,14 @@ section > img[src="essay-paper.png"] {
 }
 
 .header-right h1 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 4vw, 2.8rem);
   margin: 0;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .title {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
   margin: 8px 0 0;
   letter-spacing: 2px;
   opacity: 0.95;
@@ -542,15 +521,17 @@ section > img[src="essay-paper.png"] {
 
 .resume-content {
   display: flex;
+  flex-wrap: wrap;
+  gap: clamp(20px, 3vw, 40px);
   min-height: 600px;
 }
 
 .resume-sidebar {
   background: #34495e;
   color: #fff;
-  width: 280px;
-  padding: 40px 24px;
-  flex-shrink: 0;
+  width: clamp(220px, 25vw, 280px);
+  flex: 0 0 clamp(220px, 25vw, 280px);
+  padding: clamp(28px, 3vw, 40px);
 }
 
 .sidebar-section {
@@ -705,36 +686,6 @@ section > img[src="essay-paper.png"] {
   color: #34495e;
 }
 
-@media (max-width: 768px) {
-  .resume-content {
-    flex-direction: column;
-  }
-
-  .resume-sidebar {
-    width: 100%;
-  }
-
-  .resume-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .header-left {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .contact-bar {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .resume-main {
-    padding: 30px 20px;
-  }
-}
-
 /* Contact Page Styles */
 .contact-page {
   background: linear-gradient(180deg, #4f8ea3 0%, #8bb7c7 30%, #d0bec3 60%, #5d283d 100%);
@@ -749,7 +700,7 @@ section > img[src="essay-paper.png"] {
 }
 
 .contact-title {
-  font-size: 3.5rem;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
   color: #fff;
   text-align: center;
   margin: 0 0 50px;
@@ -760,7 +711,7 @@ section > img[src="essay-paper.png"] {
 .contact-content {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
-  padding: 50px;
+  padding: clamp(24px, 4vw, 50px);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.15);
 }
 
@@ -830,16 +781,6 @@ section > img[src="essay-paper.png"] {
   transform: translateY(0);
 }
 
-@media (max-width: 600px) {
-  .contact-content {
-    padding: 30px 20px;
-  }
-
-  .contact-title {
-    font-size: 2.5rem;
-  }
-}
-
 /* Projects Page Styles */
 .projects-page {
   background: linear-gradient(180deg, #4f8ea3 0%, #8bb7c7 30%, #d0bec3 60%, #5d283d 100%);
@@ -855,8 +796,8 @@ section > img[src="essay-paper.png"] {
 
 .projects-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(280px, 1fr);
+  gap: clamp(24px, 3vw, 40px);
   align-items: start;
 }
 
@@ -871,7 +812,7 @@ section > img[src="essay-paper.png"] {
 .carousel {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: clamp(280px, 35vw, 450px);
   background: rgba(0, 0, 0, 0.3);
   border-radius: 16px;
   overflow: hidden;
@@ -919,8 +860,8 @@ section > img[src="essay-paper.png"] {
   background: rgba(255, 255, 255, 0.8);
   border: none;
   color: #2c3e50;
-  font-size: 2rem;
-  padding: 10px 16px;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  padding: clamp(8px, 1.2vw, 16px) clamp(10px, 2vw, 16px);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -965,7 +906,7 @@ section > img[src="essay-paper.png"] {
 .projects-grid {
   grid-column: 2;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -976,6 +917,8 @@ section > img[src="essay-paper.png"] {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  flex: 1 1 clamp(120px, 32%, 260px);
+  max-width: 420px;
   height: 120px;
 }
 
@@ -991,34 +934,3 @@ section > img[src="essay-paper.png"] {
   display: block;
 }
 
-@media (max-width: 1024px) {
-  .projects-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .featured-section {
-    grid-column: 1;
-  }
-
-  .projects-grid {
-    grid-column: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .project-card {
-    flex: 1;
-    min-width: 120px;
-    height: 120px;
-  }
-
-  .carousel {
-    height: 350px;
-  }
-
-  .carousel-btn {
-    font-size: 1.5rem;
-    padding: 8px 12px;
-  }
-}
