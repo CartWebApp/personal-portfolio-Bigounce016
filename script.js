@@ -55,3 +55,28 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('load', handleScroll);
 });
 
+// Individual Projects Page Script
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('#project-tabs')) {
+    function showProject(projectName) {
+      const tabs = document.querySelectorAll('.project-tab');
+      tabs.forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.project === projectName);
+      });
+
+      const panels = document.querySelectorAll('.project-panel');
+      panels.forEach(panel => {
+        panel.classList.toggle('hidden', panel.id !== projectName);
+      });
+    }
+
+    const tabs = document.querySelectorAll('.project-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        showProject(this.dataset.project);
+      });
+    });
+  }
+});
+
+
