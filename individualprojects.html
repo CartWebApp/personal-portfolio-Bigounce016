@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elic Reynold's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -23,13 +24,13 @@
 
 
   <section id="project-tabs">
-    <button type="button" class="project-tab active" data-project="bioshield">Bioshield</button>
+    <button type="button" class="project-tab" data-project="bioshield">Bioshield</button>
     <button type="button" class="project-tab" data-project="zengarden">CSS Zen Garden</button>
     <button type="button" class="project-tab" data-project="eecu">EECU Calculator</button>
   </section>
 
  
-  <section id="bioshield">
+  <section id="bioshield" class="project-panel hidden">
           <a href="https://cart-bioshield.netlify.app/"><img src="stupidimages/image2.png" alt="Bioshield Screenshot" ></a>
           <h2>Bioshield</h2>
           <p>It is a website for natural bug repellant spray to ward off bugs. We created this using AI to see how proficient we are with it.</p>
@@ -43,7 +44,7 @@
     <p>Persistence: When I had to keep going through and making sure the full code got updated and not just parts of it shows that i don't seem to stop working till I get what I want. Communication: I communicated effectively with the partner I worked with and he helped make sure that the codes little problems were fixed and if helped create a better product.</p>
      </section>
   
-  <section id="zengarden">
+  <section id="zengarden" class="project-panel hidden">
           <a href="https://falloutzengarden.netlify.app/"><img src="stupidimages/image1.png" alt="CSS Zen Garden Terminal Screenshot" ></a>
           <h2>CSS Zen Garden</h2>
           <p>A css zen garden that takes what we like and our personality and builds it using only css with what html we were given.</p>
@@ -58,7 +59,7 @@
     </section>
 
  
-  <section id="eecu">
+  <section id="eecu" class="project-panel hidden">
           <a href="https://elic-eccuwiseup-project.netlify.app/"><img src="stupidimages/image3.png" alt="EECU Calculator Screenshot" ></a>
           <h2>EECU</h2>
           <p>A website built as a budget calculator for students that need it.</p>
@@ -72,28 +73,5 @@
     <p>Collaborate: I had to effectively collaborate with others as I acted as a manager and as developer and it comes with its challenges but i had good managers that helped me through what I worked with and when it came to being one i used the knowledge that my managers gave me. Communication: I was able to communicate clearly what I wanted on my website and how it would work and specific design choices. I was able to communicate with my managers and was able to implement what they wanted on their websites.</p>
   </section>
 
-  <script>
-    function showProject(projectName) {
-      const tabs = document.querySelectorAll('.project-tab');
-      tabs.forEach(tab => {
-        tab.classList.toggle('active', tab.dataset.project === projectName);
-      });
-
-      const panels = document.querySelectorAll('.project-panel');
-      panels.forEach(panel => {
-        panel.classList.toggle('hidden', panel.id !== projectName);
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const tabs = document.querySelectorAll('.project-tab');
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-          showProject(this.dataset.project);
-        });
-      });
-      showProject('bioshield');
-    });
-  </script>
 </body>
 </html>

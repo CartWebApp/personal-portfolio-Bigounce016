@@ -54,8 +54,11 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('load', handleScroll);
 });
- 
-function showProject(projectName) {
+
+// Individual Projects Page Script
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('#project-tabs')) {
+    function showProject(projectName) {
       const tabs = document.querySelectorAll('.project-tab');
       tabs.forEach(tab => {
         tab.classList.toggle('active', tab.dataset.project === projectName);
@@ -67,12 +70,13 @@ function showProject(projectName) {
       });
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-      const tabs = document.querySelectorAll('.project-tab');
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function () {
-          showProject(this.dataset.project);
-        });
+    const tabs = document.querySelectorAll('.project-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        showProject(this.dataset.project);
       });
-      showProject('bioshield');
     });
+  }
+});
+
+

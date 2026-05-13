@@ -125,6 +125,47 @@ nav a:hover {
   transform: translateY(-2px);
 }
 
+#project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tab {
+  border: 2px solid #4f8ea3;
+  border-radius: 999px;
+  background: #fff;
+  color: #2c3e50;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.project-tab:hover,
+.project-tab.active {
+  background: #4f8ea3;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.project-panel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 0 18px;
+  border-radius: 12px;
+}
+
+.project-panel {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 .image-row {
 	display: flex;
 	gap: 20px;
